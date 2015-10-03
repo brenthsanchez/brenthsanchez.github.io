@@ -1,83 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-
-  <!-- Basic Page Needs
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta charset="utf-8">
-  <title>Home of Brenth Sanchez</title>
-  <meta name="description" content="">
-  <meta name="author" content="">
-
-  <!-- Mobile Specific Metas
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <!-- FONT
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+        <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,900' rel='stylesheet' type='text/css'>
+                <link rel="stylesheet" href="css/skeleton.css">
   <link href="http://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
 
-  <!-- CSS
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/skeleton.css">
-    <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
-    <link rel="stylesheet" href="css/nav.css">
-  
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
 
-  <!-- Favicon
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="icon" type="image/png" href="images/favicon.png">
-    
-    <style>
+    <nav id="menu" class="panel" role="navigation">
+        <ul><img src="images/nav.png" / >
+            <li class="active" ><a href="#">Home</a></li>
+            <li><a href="work.html">Work</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
         
-       
-    </style>
-    
-</head>
-<body>
-    
-    <div id="container">
-        <button id="overlay-menu" class="menuButton" type="button"></button>
-    </div>
-    <div class="overlay overlay-data">
+    <div class="wrap push">
 
-        <button type="button" class="overlay-close">Close</button>
-        <nav>
-            <ul>
-                <li><a class="active" href="#">Home</a></li>
-                <li><a href="work.html">Work</a></li>
-                <li><a href="#">Projects</a></li>
-            </ul>
-        </nav>
-    </div>
-    <script>
-        $( "#overlay-menu" ).click(function() {
-            $( ".overlay" ).addClass('overlay-open');
-            $( ".container" ).addClass('blur');
-            $( ".vertical" ).addClass('blur');
-            $( "#container" ).addClass('hide');
-        });
-        $( ".overlay-close" ).click(function() {
-            $( ".overlay" ).removeClass('overlay-open');
-            $( ".container" ).removeClass('blur');
-            $( ".vertical" ).removeClass('blur');
-            $( "#container" ).removeClass('hide');
-        });
-    </script>
-    
-    
+        <a href="#menu" class="menu-link">&#9776;</a>
+        
+            
         <div class="vertical">
         <h1>brenth sanchez</h1>
         <h2>WEB DEVELOPER</h2>
         </div>
-
     
-    
-  <!-- Primary Page Layout
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-
+        
     <div class="container">
     
           
@@ -95,18 +52,19 @@
             
             <p>I didn't just wake up one day and decide to become a web developer. In order to succeed in life you must first be passionate about the way you choose to live it. This philosophy has lead to countless hours in front of a laptop and sleepless nights spent brainstorming solutions for a bug in a code.</p>
             
-            <p>Feel free to check out my previous <a href="work.html">work</a> and contact me for any work inquiries, collaborations, or simply to exchange ideas.</p>
+            <p>Feel free to check out my previous <a href="work.html">work</a> and contact me for any work inquiries, collaborations, or simply to exchange ideas at <a href="mailto:brenth_sanchez@hotmail.com" target="_top">brenth_sanchez@hotmail.com</a>.</p>
       
             
       </div>
     </div>
   </div>
-  
-
-<!-- End Document
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-
-		
-
+        </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="js/bigSlide.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.menu-link').bigSlide();
+        });
+    </script>
     </body>
 </html>

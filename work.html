@@ -34,36 +34,17 @@
 </head>
 <body>
     
- 
-    <div id="container">
-        <button id="overlay-menu" class="menuButton" type="button"></button>
-    </div>
-    <div class="overlay overlay-data">
+     <nav id="menu" class="panel" role="navigation">
+        <ul><img src="images/nav.png" / >
+            <li ><a href="index.html">Home</a></li>
+            <li class="active"><a href="#">Work</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
 
-        <button type="button" class="overlay-close">Close</button>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a class="active" href="#">Work</a></li>
-                <li><a href="#">Projects</a></li>
-            </ul>
-        </nav>
-    </div>
-    <script>
-        $( "#overlay-menu" ).click(function() {
-            $( ".overlay" ).addClass('overlay-open');
-            $( ".container" ).addClass('blur');
-            $( ".vertical" ).addClass('blur');
-            $( "#container" ).addClass('hide');
-        });
-        $( ".overlay-close" ).click(function() {
-            $( ".overlay" ).removeClass('overlay-open');
-            $( ".container" ).removeClass('blur');
-            $( ".vertical" ).removeClass('blur');
-            $( "#container" ).removeClass('hide');
-        });
-    </script>
-    
+      <div class="wrap push">
+                  <a href="#menu" class="menu-link">&#9776;</a>
+
     
         <div class="vertical" id="work">
 
@@ -77,16 +58,16 @@
     
           <div class="row" style="margin: 20% 0px;">
     <div class="twelve columns">
-    <h2>La Union Bakery <a href="http://brenthsanchez.github.io/bakery/"><img src="images/link.png" /></a></h2> 
+    <h2>La Union Bakery <a href="http://brenthsanchez.github.io/bakery/" target="_blank"><img src="images/link.png" /></a></h2> 
         
     <p>Re-designed a local restaurant's website that has an in-house bakery. Made sure to include a responsive menu including both spanish and english translations for their dishes.</p><p>Went to the location to take photos of the food and different breads to use in the photo gallery. Edited the photos through Photoshop to create thumbnails, add brightness and resize appropriately.</p>
       
         
-        <blockquote>Skills used: Bootstrap, jQuery, Photoshop, Responsive Design, HTML/CSS</blockquote>
+        <span>Skills used: Bootstrap, jQuery, Photoshop, Responsive Design, HTML/CSS</span>
       
       
     </div>
-    <a href="http://brenthsanchez.github.io/bakery/"><div class="twelve columns" style="margin-top: 10%; position: relative">
+    <a href="http://brenthsanchez.github.io/bakery/" target="_blank"><div class="twelve columns" style="margin-top: 10%; position: relative">
         <img class="screenshot" src="images/unionfull.png" />
                 <img class="screenshot" id="three" src="images/uniontablet.png" />
         <img class="screenshot" id="two" src="images/unionmobile.png" />
@@ -98,27 +79,33 @@
   <!-- columns should be the immediate child of a .row -->
   <div class="row" style="margin-top: 15%;">
     <div class="eight columns">
-    <h2>Lorena's Flowers <a href="http://lorenasbouquets.com/"><img src="images/link.png" /></a></h2> 
+    <h2>Lorena's Flowers <a href="http://lorenasbouquets.com/" target="_blank"><img src="images/link.png" /></a></h2> 
         
     <p>Created a website to promote a small flower arrangement business. When viewed on desktops you can scroll through the sections much like a PowerPoint presentation.</p><p>Also added a pop-up gallery showcasing previous flower arrangements after touching up the pictures in Photoshop.</p>
         
-        <blockquote>Skills used: jQuery, HTML/CSS, Photoshop, Responsive Design</blockquote>
+        <span>Skills used: jQuery, HTML/CSS, Photoshop, Responsive Design</span>
       
       
     </div>
       
-    <div style="margin-top: 20%;" class="four columns"><a href="http://lorenasbouquets.com/"><img class="screenshot" src="images/flowermobile1.png" /></a></div>
+    <div style="margin-top: 20%;" class="four columns"><a href="http://lorenasbouquets.com/" target="_blank"><img class="screenshot" src="images/flowermobile1.png" /></a></div>
       </div>
     
       <div class="row" style="margin-top: 12%;">
-            <div class="twelve columns"><a href="http://lorenasbouquets.com/"><img class="screenshot" src="images/flowershowcase.png" /></a></div>
+            <div class="twelve columns"><a href="http://lorenasbouquets.com/" target="_blank"><img class="screenshot" src="images/flowershowcase.png" /></a></div>
       </div>
   
-    
+            </div>
 
   <!-- just use a number and class 'column' or 'columns' -->
     
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="js/bigSlide.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.menu-link').bigSlide();
+        });
+    </script>
     
     </body>
 </html>

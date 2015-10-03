@@ -1,3 +1,89 @@
+/******* Navigation *********/
+
+.panel {
+    position: fixed;
+    left: -15.625em; /*or width of your navigation panel*/
+    width: 15.625em; /*should match the above value*/
+}
+
+/*  
+    Demo Specific Styles
+    ====================
+*/
+
+
+
+.wrap {
+    position: relative;
+    max-width: 100%; 
+    margin: 0 auto;
+    padding: 0;
+}
+
+.panel {
+    background: #1C2B31;
+    text-align: center;
+}
+
+.panel img {
+    margin: 2rem 0;
+}
+
+.panel a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.panel a:hover {
+        color: #fff;
+}
+
+.panel li {
+    padding: 1.5rem 1rem;
+    margin-bottom: 0;
+        border-bottom: 2px solid #B9B9B9;
+
+}
+
+.panel li.active {
+    background-color: #25B89A;
+}
+
+.panel li:hover {
+    background-color: #25B89A;
+    font-weight: 400;
+}
+
+.panel ul {
+    list-style: none;
+    border-top: 2px solid #34495D;
+}
+
+a.menu-link {
+position: absolute;
+left: 10px;
+text-decoration: none;
+font-size: 7rem;
+z-index: 1;
+color: white;}
+
+.screenshot {
+    max-width: 100%;
+}
+
+
+.blur {
+            -moz-filter: blur(10px);
+            -o-filter: blur(10px);
+            -ms-filter: blur(10px);
+            -webkit-filter: blur(10px);
+            filter: blur(10px);
+            
+        }
+        
+
+
+
 /******* Blinking < / > *******/
 h2.type{
 
@@ -11,8 +97,10 @@ h2.type{
 	from{ width: 0;}
 }
 
-span{
-	animation: blink 1s infinite;
+
+
+.container span {
+    animation: none;
 }
 
 @keyframes blink{
@@ -104,7 +192,7 @@ span{
  position: relative;
     text-align: center;
     letter-spacing: 5px;
-    color: #BD0000;
+    color: #C62828;
     font-size: 2rem;
     font-weight: 400;
 }
@@ -113,7 +201,8 @@ span{
 /* Grid
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .container {
-  position: relative;
+  background-color: #FDFDFD;
+    position: relative;
   width: 100%;
   max-width: 960px;
   margin: 0 auto;
@@ -123,7 +212,8 @@ span{
 .columns {
   width: 100%;
   float: left;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
 /* For devices larger than 400px */
 @media (min-width: 400px) {
@@ -211,6 +301,7 @@ body {
   font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #222; 
   background-color: #FDFDFD;
+    margin: 0;
 }
 
 /* Typography
@@ -514,7 +605,6 @@ there.
 .vertical h2 {
     text-align: center;
     letter-spacing: 5px;
-    color: #BD0000;
     font-size: 2rem;
 }
 }
@@ -535,8 +625,11 @@ p {
 .vertical h2 {
     text-align: center;
     letter-spacing: 5px;
-    color: #E80000;
     font-size: 3rem;
+}
+    
+.panel a {
+    font-size: 2.3rem;
 }
     
 }

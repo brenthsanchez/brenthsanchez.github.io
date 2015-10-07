@@ -1,3 +1,36 @@
+@font-face {
+	font-family: "Flaticon";
+	src: url("icons/flaticon.eot");
+	src: url("icons/flaticon.eot#iefix") format("embedded-opentype"),
+	url("icons/flaticon.woff") format("woff"),
+	url("icons/flaticon.ttf") format("truetype"),
+	url("icons/flaticon.svg") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
+	font-family: Flaticon;
+        font-size: 20px;
+font-style: normal;
+margin-left: 20px;
+}.flaticon-email19:before {
+	content: "\e000";
+    float: left;
+}
+.flaticon-home168:before {
+	content: "\e001";
+    float: left;
+}
+.flaticon-marketing8:before {
+	content: "\e002";
+    float: left;
+}
+.flaticon-users81:before {
+	content: "\e003";
+}
+
+
 /******* Navigation *********/
 
 .panel {
@@ -21,12 +54,12 @@
 }
 
 .panel {
-    background: #607d8b;
+    background: #0A0A0A;
     text-align: center;
 }
 
 .panel img {
-    margin: 2rem 0;
+    margin: 7rem 0;
 }
 
 .panel a {
@@ -60,7 +93,7 @@
 }
 
 a.menu-link {
-position: absolute;
+position: fixed;
 left: 10px;
 text-decoration: none;
 font-size: 7rem;
@@ -146,7 +179,7 @@ h2.type{
 */
 
 .vertical {
-    background-image: url(../images/headerbg1600.jpg);
+    background-image: url(../images/header.jpg);
 
     height: 800px;
     height: 100vh;
@@ -165,8 +198,7 @@ h2.type{
 
 .vertical#work{
     color: #FFFFFF;
-    background-color: #3F51B5; 
-    background-image: none;
+    background-image: url(../images/work.jpg);
 }
 
 .vertical#work H2 {
@@ -334,6 +366,11 @@ p {
 
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+h2 a {
+    color: #222;
+    text-decoration: none;
+}
+
 a {
   color: #1EAEDB; }
 a:hover {

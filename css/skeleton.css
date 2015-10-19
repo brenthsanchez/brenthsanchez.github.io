@@ -59,7 +59,7 @@ margin-left: 20px;
 }
 
 .panel img {
-    margin: 16rem 0 5rem;}
+    margin: 13rem 0 5rem;}
 
 .panel a {
     color: #fff;
@@ -98,7 +98,8 @@ left: 10px;
 text-decoration: none;
 font-size: 7rem;
 z-index: 100;
-color: whitesmoke;}
+color: #EAEAEA;
+}
 
 .screenshot {
     max-width: 100%;

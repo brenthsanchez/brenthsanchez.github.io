@@ -59,12 +59,12 @@ margin-left: 20px;
 }
 
 .panel img {
-    margin: 7rem 0;
-}
+    margin: 16rem 0 5rem;}
 
 .panel a {
     color: #fff;
     text-decoration: none;
+        font-size: 1.8rem;
 }
 
 .panel a:hover {
@@ -98,7 +98,7 @@ left: 10px;
 text-decoration: none;
 font-size: 7rem;
 z-index: 100;
-color: white;}
+color: whitesmoke;}
 
 .screenshot {
     max-width: 100%;
@@ -201,8 +201,9 @@ h2.type{
     background-image: url(../images/work.jpg);
 }
 
-.vertical#work H2 {
+.vertical#work h2 {
     color: white;
+    font-size: 4rem;
 }
 
 .vertical h1 {
@@ -215,6 +216,9 @@ h2.type{
   font-weight: 600;
   text-align: center; 
 }
+
+.vertical#work h1 {
+    font-size: 9rem;}
 
 .vertical h2 {
   top: 35%;
@@ -233,7 +237,7 @@ h2.type{
 /* Grid
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .container {
-  background-color: #FDFDFD;
+  background-color: #FFFFFF;
     position: relative;
   width: 100%;
   max-width: 960px;
@@ -332,7 +336,7 @@ body {
   font-weight: 300;
   font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #222; 
-  background-color: #FDFDFD;
+  background-color: #FFFFFF;
     margin: 0;
 }
 
@@ -654,10 +658,11 @@ p {
 }
     
     .vertical h1 {
-  font-size: 7rem;
+  font-size: 7rem;}
 
 
-}
+        
+
     
 .vertical h2 {
     text-align: center;
@@ -665,9 +670,7 @@ p {
     font-size: 3rem;
 }
     
-.panel a {
-    font-size: 2.3rem;
-}
+
     
 }
 
@@ -679,6 +682,10 @@ p {
 right: 100px;
     bottom: -70px;
     display: block;
+}
+    
+    a.menu-link {
+    left: 100px;
 }
 
 .screenshot#three {
@@ -701,7 +708,7 @@ blockquote {
 }
     
 .vertical h2 {
-    font-size: 4.6rem;
+    font-size: 6.6rem;
 }
 
 /* Larger than desktop */
@@ -710,6 +717,15 @@ blockquote {
 .vertical h1 {
     font-size: 13rem;
 }
+    
+.vertical#work h1 {
+    font-size: 19rem;
+}
+    
+.vertical#work h2 {
+    font-size: 8rem;
+}
+    
 }
 
 /* Larger than Desktop HD */
